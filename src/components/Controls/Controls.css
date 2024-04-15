@@ -1,0 +1,46 @@
+.controls-wrapper {
+  width: 80%;
+  margin: 0px;
+align-items: center;
+  justify-content: space-evenly;
+}
+
+.action-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  transform: scale(1.1);
+}
+
+.action-button.active {
+  background: #273650;
+}
+
+.play-pause-button {
+  width: 70px;
+  height: 70px;
+  border-radius: 30px;
+  background: #c96850;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  box-shadow: inset -4px -4px 10px #55291e, inset 4px 4px 10px 1px #ffae9a;
+  cursor: pointer;
+}
+
+.play-pause-button:hover {
+    transform: scale(1.1);
+}
+
+.play-pause-button.active {
+    box-shadow: inset -4px -4px 10px #55291e, inset 4px 4px 10px 1px #753d30;
+}
