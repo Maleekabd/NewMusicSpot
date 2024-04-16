@@ -19,8 +19,6 @@ const AudioPlayer = ({
   const { duration } = audioRef.current;
   const currentPersentage = duration ? (trackProgress / duration) * 100 : 0;
 
-  console.log(isReady.current);
-  console.log(isPlaying);
   const handleNext = () => {
     if (currentIndex < total.length - 1) {
       setCurrentIndex(currentIndex + 1);
@@ -29,11 +27,12 @@ const AudioPlayer = ({
     }
   };
 
+  console.log(currentIndex);
   const handlePrev = () => {
     if (currentIndex - 1 < 0) {
       setCurrentIndex(total.length - 1);
     } else {
-      currentIndex(currentIndex - 1);
+      setCurrentIndex(currentIndex - 1);
     }
   };
 
